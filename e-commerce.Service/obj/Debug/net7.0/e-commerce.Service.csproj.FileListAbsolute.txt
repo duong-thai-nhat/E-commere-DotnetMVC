@@ -1,0 +1,17 @@
+D:\Projects\e-commerce\e-commerce\e-commerce.Service\bin\Debug\net7.0\e-commerce.Service.deps.json
+D:\Projects\e-commerce\e-commerce\e-commerce.Service\bin\Debug\net7.0\e-commerce.Service.dll
+D:\Projects\e-commerce\e-commerce\e-commerce.Service\bin\Debug\net7.0\e-commerce.Service.pdb
+D:\Projects\e-commerce\e-commerce\e-commerce.Service\bin\Debug\net7.0\e-commerce.Data.dll
+D:\Projects\e-commerce\e-commerce\e-commerce.Service\bin\Debug\net7.0\e-commerce.Model.dll
+D:\Projects\e-commerce\e-commerce\e-commerce.Service\bin\Debug\net7.0\e-commerce.Data.pdb
+D:\Projects\e-commerce\e-commerce\e-commerce.Service\bin\Debug\net7.0\e-commerce.Model.pdb
+D:\Projects\e-commerce\e-commerce\e-commerce.Service\obj\Debug\net7.0\e-commerce.Service.csproj.AssemblyReference.cache
+D:\Projects\e-commerce\e-commerce\e-commerce.Service\obj\Debug\net7.0\e-commerce.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\e-commerce\e-commerce\e-commerce.Service\obj\Debug\net7.0\e-commerce.Service.AssemblyInfoInputs.cache
+D:\Projects\e-commerce\e-commerce\e-commerce.Service\obj\Debug\net7.0\e-commerce.Service.AssemblyInfo.cs
+D:\Projects\e-commerce\e-commerce\e-commerce.Service\obj\Debug\net7.0\e-commerce.Service.csproj.CoreCompileInputs.cache
+D:\Projects\e-commerce\e-commerce\e-commerce.Service\obj\Debug\net7.0\e-commerce.Service.csproj.CopyComplete
+D:\Projects\e-commerce\e-commerce\e-commerce.Service\obj\Debug\net7.0\e-commerce.Service.dll
+D:\Projects\e-commerce\e-commerce\e-commerce.Service\obj\Debug\net7.0\refint\e-commerce.Service.dll
+D:\Projects\e-commerce\e-commerce\e-commerce.Service\obj\Debug\net7.0\e-commerce.Service.pdb
+D:\Projects\e-commerce\e-commerce\e-commerce.Service\obj\Debug\net7.0\ref\e-commerce.Service.dll
