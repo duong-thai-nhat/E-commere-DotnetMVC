@@ -9,6 +9,6 @@ namespace e_commerce.Model.Entities
 
         public string? CategoryName { get; set; }
 
-        public int ParentId { get; set; }
+        public int ParentCategoryId { get; set; }
     }
 }

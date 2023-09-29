@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace e_commerce.Model.Models
 {
-    public class BrandRequestModel
+    public class ParentCategoryRequestModel
     {
-        [Required(ErrorMessage = "BrandName is required")]
-        public string? BrandName { get; set; }
+        [Required(ErrorMessage = "ParentCategoryName is required")]
+        public string? ParentCategoryName { get; set; }
     }
 }

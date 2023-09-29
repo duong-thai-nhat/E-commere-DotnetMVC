@@ -13,6 +13,6 @@ namespace e_commerce.Data
         public virtual DbSet<UserEntities> Users { get; set; }
         public virtual DbSet<ProductEntities> Products { get; set; }
         public virtual DbSet<CategoryEntities> Categories { get; set; }
-        public virtual DbSet<BrandEntities> Brands { get; set; }
+        public virtual DbSet<ParentCategoryEntities> ParentCategories { get; set; }
     }
 }

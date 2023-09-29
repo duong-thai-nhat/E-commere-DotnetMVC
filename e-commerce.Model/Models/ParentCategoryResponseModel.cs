@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace e_commerce.Model.Models
 {
-    public class BrandResponseModel
+    public class ParentCategoryResponseModel
     {
-        public int BrandID { get; set; }
-        public string? BrandName { get; set; }
+        public int ParentCategoryID { get; set; }
+        public string? ParentCategoryName { get; set; }
     }
 }

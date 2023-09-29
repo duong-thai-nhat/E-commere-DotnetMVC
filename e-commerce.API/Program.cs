@@ -1,10 +1,10 @@
 using e_commerce.Data;
-using e_commerce.Service.BrandServices;
 using e_commerce.Service.CategoryServices;
 using e_commerce.Service.ProductServices;
 using e_commerce.Service.UserServices;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using e_commerce.Service.ParentCategoryServices;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddAutoMapper(typeof(Program));
@@ -23,7 +23,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IUserServices, UserServices>();
 builder.Services.AddScoped<IProductServices, ProductServices>();
 builder.Services.AddScoped<ICategoryServices, CategoryServices>();
-builder.Services.AddScoped<IBrandServices, BrandServices>();
+builder.Services.AddScoped<IParentCategoryServices, ParentCategoryServices>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
