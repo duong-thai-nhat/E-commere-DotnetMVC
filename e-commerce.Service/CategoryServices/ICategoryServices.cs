@@ -13,7 +13,7 @@ namespace e_commerce.Service.CategoryServices
         Task<List<CategoryResponseModel>> GetCategoryAll();
         Task<CategoryResponseModel> GetCategoryById(int? categoryId);
         Task<CategoryResponseModel> CreateCategory(CategoryRequestModel categoryRequest);
-        Task<CategoryResponseModel> DeleteCategory(int? categoryId);
+        Task<bool> DeleteCategory(int? categoryId);
         Task<CategoryResponseModel> UpdateCategory(CategoryRequestModel categoryRequest, int? categoryId);
     }
 }

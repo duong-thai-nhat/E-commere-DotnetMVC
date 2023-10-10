@@ -15,6 +15,7 @@ namespace e_commerce.Service.CategoryServices
     {
         private readonly ECommerceDbContext eCommerce;
         private readonly IMapper _mapper;
+
         public CategoryServices(ECommerceDbContext eCommerce, IMapper mapper)
         {
             this.eCommerce = eCommerce;
@@ -23,55 +24,56 @@ namespace e_commerce.Service.CategoryServices
 
         public async Task<List<CategoryResponseModel>> GetCategoryAll()
         {
-            var categories = await eCommerce.Categories.Select(category => _mapper.Map<CategoryResponseModel>(category)).ToListAsync();
-
-            return categories;
+            return await eCommerce.Categories.Select(category => _mapper.Map<CategoryResponseModel>(category)).ToListAsync();
         }
 
         public async Task<CategoryResponseModel> GetCategoryById(int? categoryId)
         {
-            var category = await eCommerce.Categories.FindAsync(categoryId);
-
-            return _mapper.Map<CategoryResponseModel>(category);
+            return _mapper.Map<CategoryResponseModel>(await eCommerce.Categories.FindAsync(categoryId));
         }
 
         public async Task<CategoryResponseModel> CreateCategory(CategoryRequestModel categoryRequest)
         {
-            var category = _mapper.Map<CategoryEntities>(categoryRequest);
+            var result = new CategoryResponseModel();
+            var categoryEntities = _mapper.Map<CategoryEntities>(categoryRequest);
 
-            eCommerce.Categories.Add(category);
+            eCommerce.Categories.Add(categoryEntities);
             await eCommerce.SaveChangesAsync();
 
-            return _mapper.Map<CategoryResponseModel>(category);
+            if(categoryEntities.CategoryID > 0)
+                result = await GetCategoryById(categoryEntities.CategoryID);
+
+            return result;
         }
 
-        public async Task<CategoryResponseModel> DeleteCategory(int? categoryId)
+        public async Task<bool> DeleteCategory(int? categoryId)
         {
+            var isRemoved = false;
+
             var category = await eCommerce.Categories.FindAsync(categoryId);
 
-            if (category == null)
+            if (category != null)
             {
-                return null;
+                eCommerce.Categories.Remove(category);
+                var categoryIdRemoved = await eCommerce.SaveChangesAsync();
+                isRemoved = categoryIdRemoved > 0;
+                return isRemoved;
             }
 
-            eCommerce.Categories.Remove(category);
-            await eCommerce.SaveChangesAsync();
-
-            return _mapper.Map<CategoryResponseModel>(category);
+            return isRemoved;
         }
 
         public async Task<CategoryResponseModel> UpdateCategory(CategoryRequestModel categoryRequest, int? categoryId)
         {
             var category = await eCommerce.Categories.FindAsync(categoryId);
 
-            if (category == null)
-                return null;
-
             _mapper.Map(categoryRequest, category);
+            var categoryIdUpdated = await eCommerce.SaveChangesAsync();
 
-            await eCommerce.SaveChangesAsync();
+            if (categoryIdUpdated > 0)
+                return _mapper.Map<CategoryResponseModel>(category);
 
-            return _mapper.Map<CategoryResponseModel>(category);
+            return new CategoryResponseModel();
         }
     }
 }

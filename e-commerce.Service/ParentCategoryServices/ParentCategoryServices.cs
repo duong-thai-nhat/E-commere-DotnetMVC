@@ -23,55 +23,54 @@ namespace e_commerce.Service.ParentCategoryServices
 
         public async Task<List<ParentCategoryResponseModel>> GetParentCategoryAll()
         {
-            var parentCategories = await eCommerce.ParentCategories.Select(parentCategory => _mapper.Map<ParentCategoryResponseModel>(parentCategory)).ToListAsync();
-
-            return parentCategories;
+            return await eCommerce.ParentCategories.Select(category => _mapper.Map<ParentCategoryResponseModel>(category)).ToListAsync();
         }
 
         public async Task<ParentCategoryResponseModel> GetParentCategoryById(int? parentCategoryId)
         {
-            var parentCategory = await eCommerce.ParentCategories.FindAsync(parentCategoryId);
-
-            return _mapper.Map<ParentCategoryResponseModel>(parentCategory);
+            return _mapper.Map<ParentCategoryResponseModel>(await eCommerce.ParentCategories.FindAsync(parentCategoryId));
         }
 
         public async Task<ParentCategoryResponseModel> CreateParentCategory(ParentCategoryRequestModel parentCategoryRequest)
         {
-            var parentCategory = _mapper.Map<ParentCategoryEntities>(parentCategoryRequest);
+            var result = new ParentCategoryResponseModel();
+            var parentCategoryEntities = _mapper.Map<ParentCategoryEntities>(parentCategoryRequest);
 
-            eCommerce.ParentCategories.Add(parentCategory);
+            eCommerce.ParentCategories.Add(parentCategoryEntities);
             await eCommerce.SaveChangesAsync();
 
-            return _mapper.Map<ParentCategoryResponseModel>(parentCategory);
+            if (parentCategoryEntities.ParentCategoryId > 0)
+                result = await GetParentCategoryById(parentCategoryEntities.ParentCategoryId);
+            return result;
         }
 
-        public async Task<ParentCategoryResponseModel> DeleteParentCategory(int? parentCategoryId)
+        public async Task<bool> DeleteParentCategory(int? parentCategoryId)
         {
-            var parentCategory = await eCommerce.ParentCategories.FindAsync(parentCategoryId);
+            bool isRemoved = false;
 
-            if (parentCategory == null)
+            var parentCategory = await eCommerce.ParentCategories.FindAsync(parentCategoryId);
+            if (parentCategory != null)
             {
-                return null;
+                eCommerce.ParentCategories.Remove(parentCategory);
+                var parentCategoryIdRemoved = await eCommerce.SaveChangesAsync();
+                isRemoved = parentCategoryIdRemoved > 0;
+                return isRemoved;
             }
 
-            eCommerce.ParentCategories.Remove(parentCategory);
-            await eCommerce.SaveChangesAsync();
-
-            return _mapper.Map<ParentCategoryResponseModel>(parentCategory);
+            return isRemoved;
         }
 
         public async Task<ParentCategoryResponseModel> UpdateParentCategory(ParentCategoryRequestModel parentCategoryRequest, int? parentCategoryId)
         {
             var parentCategory = await eCommerce.ParentCategories.FindAsync(parentCategoryId);
 
-            if (parentCategory == null)
-                return null;
-
             _mapper.Map(parentCategoryRequest, parentCategory);
+            var parentCategoryIdUpdated = await eCommerce.SaveChangesAsync();
 
-            await eCommerce.SaveChangesAsync();
+            if (parentCategoryIdUpdated > 0)
+                return _mapper.Map<ParentCategoryResponseModel>(parentCategory);
 
-            return _mapper.Map<ParentCategoryResponseModel>(parentCategory);
+            return new ParentCategoryResponseModel();
         }
     }
 }

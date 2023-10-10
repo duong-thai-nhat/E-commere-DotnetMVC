@@ -2,6 +2,7 @@
 using e_commerce.Service.ParentCategoryServices;
 using e_commerce.Service.CategoryServices;
 using Microsoft.AspNetCore.Mvc;
+using e_commerce.Service.UserServices;
 
 namespace e_commerce.Controllers
 {
@@ -17,52 +18,60 @@ namespace e_commerce.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var parentCategorys = await _parentCategoryServices.GetParentCategoryAll();
+            var result = await _parentCategoryServices.GetParentCategoryAll();
 
-            if (parentCategorys == null)
+            if (result == null)
             {
-                return NotFound();
+                return NotFound("Không tồn tại Danh mục cha nào!");
             }
 
-            return Ok(parentCategorys);
+            return Ok(result);
         }
 
         [HttpGet("{parentCategoryId}")]
         public async Task<IActionResult> GetById(int? parentCategoryId)
         {
-            if (parentCategoryId != null || parentCategoryId > 0)
+            if (parentCategoryId is null || parentCategoryId <= 0)
             {
-                var result = await _parentCategoryServices.GetParentCategoryById(parentCategoryId);
-                if (result is null) return NotFound("Không tìm thấy thông tin dữ liệu");
-                return Ok(result);
+                return BadRequest("Vui lòng truyền UserId và lớn hơn 0");
             }
-            else
-            {
-                return BadRequest("Vui Lòng truyền thông tin");
-            }
+            var result = await _parentCategoryServices.GetParentCategoryById(parentCategoryId);
+
+            if (result == null)
+                return NotFound("Không tồn tại danh mục cha nào!");
+
+            return Ok(result);
         }
 
         [HttpPost]
         public async Task<IActionResult> CreateNew(ParentCategoryRequestModel parentCategory)
         {
-            if (parentCategory == null)
-                return BadRequest("Invalid data");
-            return Ok(await _parentCategoryServices.CreateParentCategory(parentCategory));
+            if (!ModelState.IsValid)
+                return BadRequest("Vui lòng nhập đầy đủ thông tin vào.");
+
+            var result = await _parentCategoryServices.CreateParentCategory(parentCategory);
+            if (result == null)
+                return NotFound("Tạo không thành công!");
+
+            return Ok(result);
         }
 
         [HttpDelete]
         public async Task<IActionResult> Delete(int? parentCategoryId)
         {
-            if (parentCategoryId != null || parentCategoryId > 0)
+            if (parentCategoryId is null || parentCategoryId <= 0)
             {
-                var result = await _parentCategoryServices.DeleteParentCategory(parentCategoryId);
-                if (result is null) return NotFound("Không tìm thấy thông tin dữ liệu");
-                return Ok(result);
+                return BadRequest("Vui lòng truyền parentCategoryId và lớn hơn 0");
             }
-            else
-            {
-                return BadRequest("Vui Lòng truyền thông tin");
-            }
+            var parentCategoryExists = await _parentCategoryServices.GetParentCategoryById(parentCategoryId);
+            if (parentCategoryExists == null)
+                return NotFound("Danh mục cha không tồn tại!");
+
+            var isRemoved = await _parentCategoryServices.DeleteParentCategory(parentCategoryId);
+            if (!isRemoved)
+                return NotFound("Xóa danh mục cha thất bại");
+
+            return Ok("Xóa danh mục cha thành công!");
         }
 
         [HttpPut("{parentCategoryId}")]

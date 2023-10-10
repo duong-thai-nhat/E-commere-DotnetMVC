@@ -6,9 +6,12 @@ D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\e-commerce.API
 D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\e-commerce.API.runtimeconfig.json
 D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\e-commerce.API.dll
 D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\e-commerce.API.pdb
+D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\AutoMapper.dll
+D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Azure.Core.dll
 D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Azure.Identity.dll
 D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Humanizer.dll
+D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
 D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
@@ -25,9 +28,13 @@ D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Microsoft.Iden
 D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
 D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Microsoft.OpenApi.dll
 D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\System.CodeDom.dll
 D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
 D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\System.Drawing.Common.dll
@@ -60,6 +67,7 @@ D:\Projects\e-commerce\e-commerce\e-commerce.API\obj\Debug\net7.0\e-commerce.API
 D:\Projects\e-commerce\e-commerce\e-commerce.API\obj\Debug\net7.0\e-commerce.API.AssemblyInfoInputs.cache
 D:\Projects\e-commerce\e-commerce\e-commerce.API\obj\Debug\net7.0\e-commerce.API.AssemblyInfo.cs
 D:\Projects\e-commerce\e-commerce\e-commerce.API\obj\Debug\net7.0\e-commerce.API.csproj.CoreCompileInputs.cache
+D:\Projects\e-commerce\e-commerce\e-commerce.API\obj\Debug\net7.0\e-commerce.API.MvcApplicationPartsAssemblyInfo.cs
 D:\Projects\e-commerce\e-commerce\e-commerce.API\obj\Debug\net7.0\e-commerce.API.MvcApplicationPartsAssemblyInfo.cache
 D:\Projects\e-commerce\e-commerce\e-commerce.API\obj\Debug\net7.0\e-commerce.API.RazorAssemblyInfo.cache
 D:\Projects\e-commerce\e-commerce\e-commerce.API\obj\Debug\net7.0\e-commerce.API.RazorAssemblyInfo.cs
@@ -79,10 +87,3 @@ D:\Projects\e-commerce\e-commerce\e-commerce.API\obj\Debug\net7.0\refint\e-comme
 D:\Projects\e-commerce\e-commerce\e-commerce.API\obj\Debug\net7.0\e-commerce.API.pdb
 D:\Projects\e-commerce\e-commerce\e-commerce.API\obj\Debug\net7.0\e-commerce.API.genruntimeconfig.cache
 D:\Projects\e-commerce\e-commerce\e-commerce.API\obj\Debug\net7.0\ref\e-commerce.API.dll
-D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Microsoft.OpenApi.dll
-D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\Projects\e-commerce\e-commerce\e-commerce.API\obj\Debug\net7.0\e-commerce.API.MvcApplicationPartsAssemblyInfo.cs
-D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\AutoMapper.dll
-D:\Projects\e-commerce\e-commerce\e-commerce.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

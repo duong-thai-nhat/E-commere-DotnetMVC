@@ -8,66 +8,65 @@ namespace e_commerce.Service.UserServices
 {
     public class UserServices : IUserServices
     {
-        private readonly ECommerceDbContext eCommerce;
+        private readonly ECommerceDbContext _context;
         private readonly IMapper _mapper;
-        public UserServices(ECommerceDbContext eCommerce, IMapper mapper)
+
+        public UserServices(ECommerceDbContext context, IMapper mapper)
         {
-            this.eCommerce = eCommerce;
+            _context = context;
             _mapper = mapper;
         }
 
         public async Task<List<UserResponseModel>> GetUserAll()
         {
-            var users = await eCommerce.Users.Select(user => _mapper.Map<UserResponseModel>(user)).ToListAsync();
-
-            return users;
+            return await _context.Users.Select(user => _mapper.Map<UserResponseModel>(user)).ToListAsync();
         }
 
         public async Task<UserResponseModel> GetUserById(int? userId)
         {
-            var user =  await eCommerce.Users.FindAsync(userId);
-
-            return _mapper.Map<UserResponseModel>(user);
+            return _mapper.Map<UserResponseModel>(await _context.Users.FindAsync(userId));
         }
 
         public async Task<UserResponseModel> CreateUser(UserRequestModel userRequest)
         {
+            var result = new UserResponseModel();
             var userEntities = _mapper.Map<UserEntities>(userRequest);
 
-            eCommerce.Users.Add(userEntities);
-            await eCommerce.SaveChangesAsync();
+            _context.Users.Add(userEntities);
+            await _context.SaveChangesAsync();
 
-            return _mapper.Map<UserResponseModel>(userEntities); ;
+            if (userEntities.Id > 0)
+                result = await GetUserById(userEntities.Id);
+            return result;
         }
 
-        public async Task<UserResponseModel> DeleteUser(int? userId)
+        public async Task<bool> DeleteUser(int? userId)
         {
-            var user = await eCommerce.Users.FindAsync(userId);
-            
-            if (user == null)
+            bool isRemoved = false;
+
+            var user = await _context.Users.FindAsync(userId);
+            if (user != null)
             {
-                return null;
+                _context.Users.Remove(user);
+                var userIdRemoved = await _context.SaveChangesAsync();
+                isRemoved = userIdRemoved > 0;
+                return isRemoved;
             }
 
-            eCommerce.Users.Remove(user);
-            await eCommerce.SaveChangesAsync();
-
-            return _mapper.Map<UserResponseModel>(user);
+            return isRemoved;
         }
 
         public async Task<UserResponseModel> UpdateUser(UserRequestModel userRequest, int? userId)
         {
-            var user = await eCommerce.Users.FindAsync(userId);
-
-            if (user == null)
-            {
-                return null;
-            }
+            var user = await _context.Users.FindAsync(userId);
 
             _mapper.Map(userRequest, user);
-            await eCommerce.SaveChangesAsync();
+            var userIdUpdated = await _context.SaveChangesAsync();
 
-            return _mapper.Map<UserResponseModel>(user);
+            if (userIdUpdated > 0)
+                return _mapper.Map<UserResponseModel>(user);
+
+            return new UserResponseModel();
         }
     }
 }

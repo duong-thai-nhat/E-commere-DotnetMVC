@@ -32,41 +32,45 @@ namespace e_commerce.Service.ProductServices
 
         public async Task<ProductResponseModel> CreateProduct(ProductRequestModel productRequest)
         {
+            var result = new ProductResponseModel();
             var productEntities = _mapper.Map<ProductEntities>(productRequest);
 
             eCommerce.Products.Add(productEntities);
             await eCommerce.SaveChangesAsync();
 
-            return _mapper.Map<ProductResponseModel>(productEntities);
+            if(productEntities.ProductID > 0)
+                result = await GetProductById(productEntities.ProductID);
+
+            return result;
         }
 
-        public async Task<ProductResponseModel> DeleteProduct(int? productId)
+        public async Task<bool> DeleteProduct(int? productId)
         {
+            bool isRemoved = false;
+
             var product = await eCommerce.Products.FindAsync(productId);
 
-            if (product == null)
+            if (product != null)
             {
-                return null;
+                eCommerce.Products.Remove(product);
+                var productIdRemoved = await eCommerce.SaveChangesAsync();
+                isRemoved = productIdRemoved > 0;
+                return isRemoved;
             }
-
-            eCommerce.Products.Remove(product);
-            await eCommerce.SaveChangesAsync();
-
-            return _mapper.Map<ProductResponseModel>(product);
+            return isRemoved;
         }
 
         public async Task<ProductResponseModel> UpdateProduct(ProductRequestModel productRequest, int? productId)
         {
             var product = await eCommerce.Products.FindAsync(productId);
 
-            if (product == null)
-                return null;
-
             _mapper.Map(productRequest, product);
+            var productIdUpdate = await eCommerce.SaveChangesAsync();
 
-            await eCommerce.SaveChangesAsync();
+            if (productIdUpdate > 0)
+                return _mapper.Map<ProductResponseModel>(product);
 
-            return _mapper.Map<ProductResponseModel>(product);
+            return new ProductResponseModel();
         }
     }
 }

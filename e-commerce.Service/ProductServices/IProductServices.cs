@@ -7,7 +7,7 @@ namespace e_commerce.Service.ProductServices
         Task<ProductResponseModel> GetProductById(int? productId);
         Task<List<ProductResponseModel>> GetProductAll();
         Task<ProductResponseModel> CreateProduct(ProductRequestModel productRequest);
-        Task<ProductResponseModel> DeleteProduct(int? productId);
+        Task<bool> DeleteProduct(int? productId);
         Task<ProductResponseModel> UpdateProduct(ProductRequestModel productRequest, int? productId);
     }
 }

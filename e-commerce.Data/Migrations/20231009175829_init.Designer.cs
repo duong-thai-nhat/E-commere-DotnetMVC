@@ -11,8 +11,8 @@ using e_commerce.Data;
 namespace e_commerce.Data.Migrations
 {
     [DbContext(typeof(ECommerceDbContext))]
-    [Migration("20230924173943_ProducTableUpdate")]
-    partial class ProducTableUpdate
+    [Migration("20231009175829_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,6 +24,38 @@ namespace e_commerce.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("e_commerce.Model.Entities.CategoryEntities", b =>
+                {
+                    b.Property<int>("CategoryID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryID"));
+
+                    b.Property<string>("CategoryName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CategoryID");
+
+                    b.ToTable("Categories");
+                });
+
+            modelBuilder.Entity("e_commerce.Model.Entities.ParentCategoryEntities", b =>
+                {
+                    b.Property<int>("ParentCategoryId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ParentCategoryId"));
+
+                    b.Property<string>("ParentCategoryName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ParentCategoryId");
+
+                    b.ToTable("ParentCategories");
+                });
+
             modelBuilder.Entity("e_commerce.Model.Entities.ProductEntities", b =>
                 {
                     b.Property<int>("ProductID")
@@ -31,6 +63,9 @@ namespace e_commerce.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductID"));
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Color")
                         .HasColumnType("nvarchar(max)");
@@ -48,6 +83,8 @@ namespace e_commerce.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ProductID");
+
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
                 });
@@ -81,6 +118,38 @@ namespace e_commerce.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("e_commerce.Model.Entities.UserRoleEntities", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("RoleName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UserRoles");
+                });
+
+            modelBuilder.Entity("e_commerce.Model.Entities.ProductEntities", b =>
+                {
+                    b.HasOne("e_commerce.Model.Entities.CategoryEntities", "Category")
+                        .WithMany("Products")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("e_commerce.Model.Entities.CategoryEntities", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }
