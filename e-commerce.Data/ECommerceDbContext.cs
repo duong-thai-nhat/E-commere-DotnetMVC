@@ -22,5 +22,6 @@ namespace e_commerce.Data
         public virtual DbSet<CategoryEntities> Categories { get; set; }
         public virtual DbSet<ParentCategoryEntities> ParentCategories { get; set; }
         public virtual DbSet<UserRoleEntities> UserRoles { get; set; }
+        public virtual DbSet<CartEntities> Carts { get; set; }
     }
 }

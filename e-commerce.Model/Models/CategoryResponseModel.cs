@@ -9,6 +9,7 @@ namespace e_commerce.Model.Models
     public class CategoryResponseModel
     {
         public int CategoryID { get; set; }
+
         public string? CategoryName { get; set; }
     }
 }

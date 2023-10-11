@@ -18,5 +18,7 @@ namespace e_commerce.Model.Entities
         public string? Email { get; set; }
 
         public string? Phone { get; set; }
+
+        public UserRoleEntities? Role { get; set; }
     }
 }

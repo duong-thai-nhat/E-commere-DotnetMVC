@@ -19,6 +19,6 @@ namespace e_commerce.Model.Entities
         public string? Description { get; set;}
 
         [ForeignKey("CategoryId")]
-        public CategoryEntities Category { get; set; }
+        public CategoryEntities? Category { get; set; }
     }
 }

@@ -16,4 +16,8 @@
     <ProjectReference Include="..\e-commerce.Model\e-commerce.Model.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="CartServices\" />
+  </ItemGroup>
+
 </Project>

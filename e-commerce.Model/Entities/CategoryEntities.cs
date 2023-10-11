@@ -9,6 +9,6 @@ namespace e_commerce.Model.Entities
 
         public string? CategoryName { get; set; }
 
-        public ICollection<ProductEntities> Products { get; set; }
+        public ICollection<ProductEntities>? Products { get; set; }
     }
 }
