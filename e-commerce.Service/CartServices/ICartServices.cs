@@ -9,10 +9,9 @@ namespace e_commerce.Service.CartServices
 {
     public interface ICartServices
     {
-        Task<List<CartResponseModel>> Get(int userId);
-        Task<CartResponseModel> GetById(int userId,int productId);
-        //Task<CartResponseModel> Create(CartRequestModel cartRequest);
-        //Task<CategoryResponseModel> Delete(int userId, int productId);
-        //Task<CategoryResponseModel> Update(CategoryRequestModel categoryRequest);
+        Task<List<CartResponseModel>> Get(int? userId);
+        Task<CartResponseModel> GetById(int? userId,int? productId);
+        Task<CartResponseModel> CreateOrUpdate(CartRequestModel cartRequest);
+        Task<bool> Delete(int? userId, int? productId);
     }
 }

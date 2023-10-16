@@ -13,5 +13,7 @@ namespace e_commerce.Model.Entities
         public int Id { get; set; }
 
         public string? RoleName { get; set; }
+
+        public List<UserEntities>? UserEntities { get; set; }
     }
 }

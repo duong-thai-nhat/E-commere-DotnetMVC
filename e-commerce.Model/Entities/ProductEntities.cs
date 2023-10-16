@@ -20,5 +20,9 @@ namespace e_commerce.Model.Entities
 
         [ForeignKey("CategoryId")]
         public CategoryEntities? Category { get; set; }
+
+        public List<CartEntities>? CartEntities { get; set; }
+
+        public List<OrderDetailEntities>? OrderDetailEntities { get; set; }
     }
 }

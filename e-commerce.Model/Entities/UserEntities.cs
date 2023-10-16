@@ -20,5 +20,9 @@ namespace e_commerce.Model.Entities
         public string? Phone { get; set; }
 
         public UserRoleEntities? Role { get; set; }
+
+        public List<CartEntities>? CartEntities { get; set; }
+
+        public List<OrderEntities>? OrderEntities { get; set; }
     }
 }

@@ -22,6 +22,24 @@ namespace e_commerce.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("e_commerce.Model.Entities.CartEntities", b =>
+                {
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("ProductId", "UserId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Carts");
+                });
+
             modelBuilder.Entity("e_commerce.Model.Entities.CategoryEntities", b =>
                 {
                     b.Property<int>("CategoryID")
@@ -36,6 +54,51 @@ namespace e_commerce.Data.Migrations
                     b.HasKey("CategoryID");
 
                     b.ToTable("Categories");
+                });
+
+            modelBuilder.Entity("e_commerce.Model.Entities.OrderDetailEntities", b =>
+                {
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("OderId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Note")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("decimal(10, 2)");
+
+                    b.HasKey("ProductId", "OderId");
+
+                    b.HasIndex("OderId");
+
+                    b.ToTable("OrderDetails");
+                });
+
+            modelBuilder.Entity("e_commerce.Model.Entities.OrderEntities", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("e_commerce.Model.Entities.ParentCategoryEntities", b =>
@@ -71,8 +134,8 @@ namespace e_commerce.Data.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Price")
-                        .HasColumnType("int");
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(10, 2)");
 
                     b.Property<string>("ProductName")
                         .HasColumnType("nvarchar(max)");
@@ -139,6 +202,57 @@ namespace e_commerce.Data.Migrations
                     b.ToTable("UserRoles");
                 });
 
+            modelBuilder.Entity("e_commerce.Model.Entities.CartEntities", b =>
+                {
+                    b.HasOne("e_commerce.Model.Entities.ProductEntities", "Product")
+                        .WithMany("CartEntities")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_Cart_Product_PM");
+
+                    b.HasOne("e_commerce.Model.Entities.UserEntities", "User")
+                        .WithMany("CartEntities")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_Cart_User_PM");
+
+                    b.Navigation("Product");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("e_commerce.Model.Entities.OrderDetailEntities", b =>
+                {
+                    b.HasOne("e_commerce.Model.Entities.OrderEntities", "Order")
+                        .WithMany("OrderDetailEntities")
+                        .HasForeignKey("OderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_OrderDetail_Order_PM");
+
+                    b.HasOne("e_commerce.Model.Entities.ProductEntities", "Product")
+                        .WithMany("OrderDetailEntities")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_OrderDetail_Product_PM");
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("e_commerce.Model.Entities.OrderEntities", b =>
+                {
+                    b.HasOne("e_commerce.Model.Entities.UserEntities", "User")
+                        .WithMany("OrderEntities")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("e_commerce.Model.Entities.ProductEntities", b =>
                 {
                     b.HasOne("e_commerce.Model.Entities.CategoryEntities", "Category")
@@ -151,7 +265,7 @@ namespace e_commerce.Data.Migrations
             modelBuilder.Entity("e_commerce.Model.Entities.UserEntities", b =>
                 {
                     b.HasOne("e_commerce.Model.Entities.UserRoleEntities", "Role")
-                        .WithMany()
+                        .WithMany("UserEntities")
                         .HasForeignKey("RoleId");
 
                     b.Navigation("Role");
@@ -160,6 +274,30 @@ namespace e_commerce.Data.Migrations
             modelBuilder.Entity("e_commerce.Model.Entities.CategoryEntities", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("e_commerce.Model.Entities.OrderEntities", b =>
+                {
+                    b.Navigation("OrderDetailEntities");
+                });
+
+            modelBuilder.Entity("e_commerce.Model.Entities.ProductEntities", b =>
+                {
+                    b.Navigation("CartEntities");
+
+                    b.Navigation("OrderDetailEntities");
+                });
+
+            modelBuilder.Entity("e_commerce.Model.Entities.UserEntities", b =>
+                {
+                    b.Navigation("CartEntities");
+
+                    b.Navigation("OrderEntities");
+                });
+
+            modelBuilder.Entity("e_commerce.Model.Entities.UserRoleEntities", b =>
+                {
+                    b.Navigation("UserEntities");
                 });
 #pragma warning restore 612, 618
         }
