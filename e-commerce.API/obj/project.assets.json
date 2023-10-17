@@ -4394,11 +4394,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\e-commerce.API.csproj",
+      "projectUniqueName": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\e-commerce.API.csproj",
       "projectName": "e-commerce.API",
-      "projectPath": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\e-commerce.API.csproj",
+      "projectPath": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\e-commerce.API.csproj",
       "packagesPath": "C:\\Users\\duong\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\obj\\",
+      "outputPath": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\duong\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4415,11 +4415,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.Model\\e-commerce.Model.csproj": {
-              "projectPath": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.Model\\e-commerce.Model.csproj"
+            "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.Model\\e-commerce.Model.csproj": {
+              "projectPath": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.Model\\e-commerce.Model.csproj"
             },
-            "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.Service\\e-commerce.Service.csproj": {
-              "projectPath": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.Service\\e-commerce.Service.csproj"
+            "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.Service\\e-commerce.Service.csproj": {
+              "projectPath": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.Service\\e-commerce.Service.csproj"
             }
           }
         }

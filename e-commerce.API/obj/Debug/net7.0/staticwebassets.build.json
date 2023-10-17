@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fYvqM3rjR98K9sry26H/6uYscC0yuP//33VsIkKPk+Y=",
+  "Hash": "kazrcDp+ODZW0aGxTZ2WevVgq0+D4GbrTrU7CUf+hws=",
   "Source": "e-commerce.API",
   "BasePath": "_content/e-commerce.API",
   "Mode": "Default",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\obj\\Debug\\net7.0\\scopedcss\\bundle\\e-commerce.API.styles.css",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\obj\\Debug\\net7.0\\scopedcss\\bundle\\e-commerce.API.styles.css",
       "SourceId": "e-commerce.API",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/e-commerce.API",
       "RelativePath": "e-commerce.API.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\obj\\Debug\\net7.0\\scopedcss\\bundle\\e-commerce.API.styles.css"
+      "OriginalItemSpec": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\obj\\Debug\\net7.0\\scopedcss\\bundle\\e-commerce.API.styles.css"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\e-commerce.API.bundle.scp.css",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\e-commerce.API.bundle.scp.css",
       "SourceId": "e-commerce.API",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/e-commerce.API",
       "RelativePath": "e-commerce.API.bundle.scp.css",
       "AssetKind": "All",
@@ -48,10 +48,10 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\e-commerce.API.bundle.scp.css"
+      "OriginalItemSpec": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\e-commerce.API.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\css\\site.css",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\css\\site.css",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -68,7 +68,7 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\favicon.ico",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\favicon.ico",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -85,7 +85,7 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\js\\site.js",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\js\\site.js",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -102,143 +102,7 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "SourceId": "e-commerce.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
-      "BasePath": "_content/e-commerce.API",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
-    },
-    {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
-      "SourceId": "e-commerce.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
-      "BasePath": "_content/e-commerce.API",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
-    },
-    {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "SourceId": "e-commerce.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
-      "BasePath": "_content/e-commerce.API",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
-    },
-    {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
-      "SourceId": "e-commerce.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
-      "BasePath": "_content/e-commerce.API",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
-    },
-    {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "SourceId": "e-commerce.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
-      "BasePath": "_content/e-commerce.API",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
-    },
-    {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
-      "SourceId": "e-commerce.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
-      "BasePath": "_content/e-commerce.API",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
-    },
-    {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
-      "SourceId": "e-commerce.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
-      "BasePath": "_content/e-commerce.API",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
-    },
-    {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
-      "SourceId": "e-commerce.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
-      "BasePath": "_content/e-commerce.API",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
-    },
-    {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -255,7 +119,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -272,7 +136,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -289,7 +153,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -306,7 +170,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -323,7 +187,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -340,7 +204,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -357,7 +221,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -374,7 +238,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -391,7 +255,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -408,7 +272,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -425,7 +289,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -442,7 +306,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -459,7 +323,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -476,7 +340,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -493,7 +357,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -510,7 +374,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -527,7 +391,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -544,7 +408,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -561,7 +425,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -578,7 +442,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -595,7 +459,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -612,7 +476,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -629,7 +493,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -646,7 +510,143 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "SourceId": "e-commerce.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
+      "BasePath": "_content/e-commerce.API",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "SourceId": "e-commerce.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
+      "BasePath": "_content/e-commerce.API",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "SourceId": "e-commerce.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
+      "BasePath": "_content/e-commerce.API",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "SourceId": "e-commerce.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
+      "BasePath": "_content/e-commerce.API",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "SourceId": "e-commerce.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
+      "BasePath": "_content/e-commerce.API",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "SourceId": "e-commerce.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
+      "BasePath": "_content/e-commerce.API",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "SourceId": "e-commerce.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
+      "BasePath": "_content/e-commerce.API",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "SourceId": "e-commerce.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
+      "BasePath": "_content/e-commerce.API",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -663,7 +663,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -680,7 +680,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -697,7 +697,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -714,7 +714,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -731,7 +731,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -748,7 +748,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -765,7 +765,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -782,7 +782,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -799,7 +799,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -816,7 +816,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -833,7 +833,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -850,7 +850,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -867,160 +867,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery\\dist\\jquery.js",
-      "SourceId": "e-commerce.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
-      "BasePath": "_content/e-commerce.API",
-      "RelativePath": "lib/jquery/dist/jquery.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
-    },
-    {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
-      "SourceId": "e-commerce.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
-      "BasePath": "_content/e-commerce.API",
-      "RelativePath": "lib/jquery/dist/jquery.min.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
-    },
-    {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
-      "SourceId": "e-commerce.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
-      "BasePath": "_content/e-commerce.API",
-      "RelativePath": "lib/jquery/dist/jquery.min.map",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
-    },
-    {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery\\LICENSE.txt",
-      "SourceId": "e-commerce.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
-      "BasePath": "_content/e-commerce.API",
-      "RelativePath": "lib/jquery/LICENSE.txt",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
-    },
-    {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
-      "SourceId": "e-commerce.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
-      "BasePath": "_content/e-commerce.API",
-      "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
-    },
-    {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
-      "SourceId": "e-commerce.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
-      "BasePath": "_content/e-commerce.API",
-      "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
-    },
-    {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
-      "SourceId": "e-commerce.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
-      "BasePath": "_content/e-commerce.API",
-      "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
-    },
-    {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
-      "SourceId": "e-commerce.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
-      "BasePath": "_content/e-commerce.API",
-      "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
-    },
-    {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
-      "SourceId": "e-commerce.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
-      "BasePath": "_content/e-commerce.API",
-      "RelativePath": "lib/jquery-validation/LICENSE.md",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
-    },
-    {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -1037,7 +884,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -1054,7 +901,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "e-commerce.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
@@ -1069,6 +916,159 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "SourceId": "e-commerce.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
+      "BasePath": "_content/e-commerce.API",
+      "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "SourceId": "e-commerce.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
+      "BasePath": "_content/e-commerce.API",
+      "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "SourceId": "e-commerce.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
+      "BasePath": "_content/e-commerce.API",
+      "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "SourceId": "e-commerce.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
+      "BasePath": "_content/e-commerce.API",
+      "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "SourceId": "e-commerce.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
+      "BasePath": "_content/e-commerce.API",
+      "RelativePath": "lib/jquery-validation/LICENSE.md",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "SourceId": "e-commerce.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
+      "BasePath": "_content/e-commerce.API",
+      "RelativePath": "lib/jquery/dist/jquery.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "SourceId": "e-commerce.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
+      "BasePath": "_content/e-commerce.API",
+      "RelativePath": "lib/jquery/dist/jquery.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "SourceId": "e-commerce.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
+      "BasePath": "_content/e-commerce.API",
+      "RelativePath": "lib/jquery/dist/jquery.min.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Identity": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "SourceId": "e-commerce.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.API\\wwwroot\\",
+      "BasePath": "_content/e-commerce.API",
+      "RelativePath": "lib/jquery/LICENSE.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     }
   ]
 }

@@ -25,8 +25,8 @@ namespace e_commerce.Service.CartServices
         public async Task<List<CartResponseModel>> Get(int? userId)
         {
             return await _context.Carts
-                .Select(cart => _mapper.Map<CartResponseModel>(cart))
                 .Where(cart => cart.UserId == userId)
+                .Select(cart => _mapper.Map<CartResponseModel>(cart))
                 .ToListAsync();
         }
 

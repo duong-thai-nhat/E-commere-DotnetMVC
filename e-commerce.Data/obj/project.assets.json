@@ -2928,8 +2928,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.Model\\e-commerce.Model.csproj": {
-              "projectPath": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.Model\\e-commerce.Model.csproj"
+            "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.Model\\e-commerce.Model.csproj": {
+              "projectPath": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.Model\\e-commerce.Model.csproj"
             }
           }
         }

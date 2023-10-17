@@ -15,7 +15,7 @@ namespace e_commerce.Controllers
         }
 
         [HttpGet]
-        [Authorize]
+        //[Authorize]
         public async Task<IActionResult> GetAll()
         {
             var result = await productServices.GetProductAll();
