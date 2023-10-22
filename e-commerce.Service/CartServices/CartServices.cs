@@ -24,16 +24,42 @@ namespace e_commerce.Service.CartServices
 
         public async Task<List<CartResponseModel>> Get(int? userId)
         {
-            return await _context.Carts
-                .Where(cart => cart.UserId == userId)
-                .Select(cart => _mapper.Map<CartResponseModel>(cart))
-                .ToListAsync();
+            var carts = await (from c in _context.Carts
+                               join u in _context.Users
+                               on c.UserId equals u.Id
+                               join p in _context.Products
+                               on c.ProductId equals p.ProductID
+                               where c.UserId == userId
+                               select new CartResponseModel
+                               {
+                                   UserId = c.UserId,
+                                   ProductId = c.ProductId,
+                                   User = u.UserName,
+                                   Product = p.ProductName,
+                                   Quantity = c.Quantity
+                               }).ToListAsync();
+
+            return carts;
         }
 
         public async Task<CartResponseModel> GetById(int? userId, int? productId)
         {
-            var result = await _context.Carts.SingleOrDefaultAsync(cart => cart.UserId == userId && cart.ProductId == productId);
-            return _mapper.Map<CartResponseModel>(result);
+            var cart = await (from c in _context.Carts
+                                            join u in _context.Users
+                                            on c.UserId equals u.Id
+                                            join p in _context.Products
+                                            on c.ProductId equals p.ProductID
+                                            where c.ProductId == productId && c.UserId == userId
+                                            select new CartResponseModel
+                                            {
+                                                UserId = c.UserId,
+                                                ProductId = c.ProductId,
+                                                User = u.UserName,
+                                                Product = p.ProductName,
+                                                Quantity = c.Quantity
+                                            }).SingleOrDefaultAsync();
+
+            return cart ?? new CartResponseModel();
         }
 
         public async Task<CartResponseModel> CreateOrUpdate(CartRequestModel cartRequest)

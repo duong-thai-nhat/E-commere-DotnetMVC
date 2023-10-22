@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.Model\\e-commerce.Model.csproj": {}
+    "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.Model\\e-commerce.Model.csproj": {}
   },
   "projects": {
-    "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.Model\\e-commerce.Model.csproj": {
+    "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.Model\\e-commerce.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.Model\\e-commerce.Model.csproj",
+        "projectUniqueName": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.Model\\e-commerce.Model.csproj",
         "projectName": "e-commerce.Model",
-        "projectPath": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.Model\\e-commerce.Model.csproj",
+        "projectPath": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.Model\\e-commerce.Model.csproj",
         "packagesPath": "C:\\Users\\duong\\.nuget\\packages\\",
-        "outputPath": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.Model\\obj\\",
+        "outputPath": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\duong\\AppData\\Roaming\\NuGet\\NuGet.Config",

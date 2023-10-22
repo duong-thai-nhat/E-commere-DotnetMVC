@@ -24,12 +24,31 @@ namespace e_commerce.Service.OrderServices
 
         public async Task<List<OrderResponseModel>> GetAll()
         {
-            return await _context.Orders.Select(order => _mapper.Map<OrderResponseModel>(order)).ToListAsync();
+            var orders = await (from o  in _context.Orders
+                               join u in _context.Users
+                                on o.UserId equals u.Id
+                                select new OrderResponseModel
+                                {
+                                    Id = o.Id,
+                                    User = u.UserName,
+                                    OrderDate = o.OrderDate,
+                                }).ToListAsync();
+            return orders;
         }
 
         public async Task<OrderResponseModel> GetById(int? id)
         {
-            return _mapper.Map<OrderResponseModel>(await _context.Orders.FindAsync(id));
+            var order = await (from o in _context.Orders
+                                join u in _context.Users
+                                 on o.UserId equals u.Id
+                                 where o.Id == id
+                                select new OrderResponseModel
+                                {
+                                    Id = o.Id,
+                                    User = u.UserName,
+                                    OrderDate = o.OrderDate,
+                                }).SingleOrDefaultAsync();
+            return order ?? new OrderResponseModel();
         }
 
         public async Task<OrderResponseModel> Create(OrderRequestModel orderRequest)

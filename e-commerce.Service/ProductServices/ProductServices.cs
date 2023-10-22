@@ -18,16 +18,41 @@ namespace e_commerce.Service.ProductServices
 
         public async Task<List<ProductResponseModel>> GetProductAll()
         {
-            var products = await eCommerce.Products.Select(product => _mapper.Map<ProductResponseModel>(product)).ToListAsync();
+            var products = await (from p in eCommerce.Products
+                                  join c in eCommerce.Categories
+                                  on p.CategoryID equals c.CategoryID
+                                  select new ProductResponseModel
+                                  {
+                                      ProductID = p.ProductID,
+                                      ProductName = p.ProductName,
+                                      Color = p.Color,
+                                      Size = p.Size,
+                                      Price = p.Price,
+                                      Description = p.Description,
+                                      Category = c.CategoryName
+                                  }).ToListAsync();
 
             return products;
         }
 
         public async Task<ProductResponseModel> GetProductById(int? productId)
         {
-            var product = await eCommerce.Products.FindAsync(productId);
+            var productById = await (from p in eCommerce.Products
+                                        join c in eCommerce.Categories
+                                        on p.CategoryID equals c.CategoryID
+                                        where p.ProductID == productId
+                                        select new ProductResponseModel
+                                        {
+                                            ProductID = p.ProductID,
+                                            ProductName = p.ProductName,
+                                            Color = p.Color,
+                                            Size = p.Size,
+                                            Price = p.Price,
+                                            Description = p.Description,
+                                            Category = c.CategoryName
+                                        }).SingleOrDefaultAsync();
 
-            return _mapper.Map<ProductResponseModel>(product);
+            return productById ?? new ProductResponseModel();
         }
 
         public async Task<ProductResponseModel> CreateProduct(ProductRequestModel productRequest)

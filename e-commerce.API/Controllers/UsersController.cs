@@ -2,7 +2,9 @@
 using e_commerce.Data;
 using e_commerce.Model.Models;
 using e_commerce.Models;
+using e_commerce.Service.RoleServices;
 using e_commerce.Service.UserServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -14,24 +16,30 @@ namespace e_commerce.Controllers
 {
     public class UsersController : BaseController
     {
-        private readonly IUserServices userServices;
+        private readonly IUserServices _userServices;
         private readonly ECommerceDbContext _context;
         private readonly AppSetting _appSettings;
         private readonly IMapper _mapper;
+        
+        private readonly IRoleServices _roleServices;
+
 
         public UsersController(IUserServices userServices, ECommerceDbContext context,
-            IOptionsMonitor<AppSetting> optionsMonitor, IMapper mapper)
+            IOptionsMonitor<AppSetting> optionsMonitor, IMapper mapper, IRoleServices roleServices)
         {
-            this.userServices = userServices;
-            this._context = context;
-            this._appSettings = optionsMonitor.CurrentValue;
-            this._mapper = mapper;
+            _userServices = userServices;
+            _context = context;
+            _appSettings = optionsMonitor.CurrentValue;
+            _mapper = mapper;
+            _roleServices = roleServices; 
+            //CHỖ NÀY KHI NÀO TRÙNG TÊN THÌ MỚI DÙNG THIS.  -> VÌ Ở ĐÂY ĐANG KHÁC NHAU DẤU _ NÊN KO CẦN THIS.
+            //vÍ DỤ NHƯ  userServices 2 biến nó trùng tên nên có this. để biết được biến này được khai báo ở ngoài chứ ko phải trong contructor.
         }
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var result = await userServices.GetUserAll();
+            var result = await _userServices.GetUserAll();
 
             if (result == null)
                 return NotFound("Không tồn tại người dùng nào!");
@@ -46,7 +54,7 @@ namespace e_commerce.Controllers
             {
                 return BadRequest("Vui lòng truyền UserId và lớn hơn 0");
             }
-            var result = await userServices.GetUserById(userId);
+            var result = await _userServices.GetUserById(userId);
 
             if (result == null)
                 return NotFound("Không tồn tại người dùng nào!");
@@ -103,7 +111,7 @@ namespace e_commerce.Controllers
                     new Claim("TokenId", Guid.NewGuid().ToString())
                 }),
 
-                Expires = DateTime.UtcNow.AddMinutes(1),
+                Expires = DateTime.UtcNow.AddMinutes(5),
 
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(secretKeyBytes), SecurityAlgorithms.HmacSha256Signature)
             };
@@ -115,12 +123,17 @@ namespace e_commerce.Controllers
         #endregion Logic Token
 
         [HttpPost]
-        public async Task<IActionResult> CreateNew(UserRequestModel user)
+        public async Task<IActionResult> Create(UserRequestModel user)
         {
             if (!ModelState.IsValid) 
                 return BadRequest("Vui lòng nhập thông tin người dùng.");
 
-            var result = await userServices.CreateUser(user);
+            //validate role id
+            var roleById = await _roleServices.GetById(user.RoleId);
+            if(roleById is null )
+                return BadRequest("Role người dùng không hợp lệ.");
+
+            var result = await _userServices.CreateUser(user);
             if (result == null)
                 return NotFound("Tạo không thành công!");
 
@@ -134,11 +147,11 @@ namespace e_commerce.Controllers
             {
                 return BadRequest("Vui lòng truyền UserId và lớn hơn 0");
             }
-            var userExists = await userServices.GetUserById(userId);
+            var userExists = await _userServices.GetUserById(userId);
             if (userExists == null)
                 return NotFound("Người dùng không tồn tại!");
 
-            var isRemoved = await userServices.DeleteUser(userId);
+            var isRemoved = await _userServices.DeleteUser(userId);
             if(!isRemoved)
                 return NotFound("Xóa người dùng thất bại");
 
@@ -151,11 +164,11 @@ namespace e_commerce.Controllers
             if (!ModelState.IsValid || userId <= 0)
                 return BadRequest("Vui lòng nhập thông tin.");
 
-            var userExists = await userServices.GetUserById(userId);
+            var userExists = await _userServices.GetUserById(userId);
             if (userExists == null)
                 return NotFound();
 
-            var result = await userServices.UpdateUser(user, userId);
+            var result = await _userServices.UpdateUser(user, userId);
 
             if (result == null) 
                 return NotFound("Cập nhật thất bại !");

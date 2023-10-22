@@ -15,6 +15,9 @@ namespace e_commerce.Model.Entities
 
         public DateTime OrderDate { get; set; }
 
+        [ForeignKey("UserId")]
+        public int UserId { get; set; }
+
         public UserEntities? User { get; set; }
 
         public List<OrderDetailEntities>? OrderDetailEntities { get; set; }

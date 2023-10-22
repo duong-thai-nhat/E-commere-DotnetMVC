@@ -12,8 +12,8 @@ using e_commerce.Data;
 namespace e_commerce.Data.Migrations
 {
     [DbContext(typeof(ECommerceDbContext))]
-    [Migration("20231014162353_add-new-db")]
-    partial class addnewdb
+    [Migration("20231022182231_update-table-Order")]
+    partial class updatetableOrder
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -31,6 +31,9 @@ namespace e_commerce.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CategoryID")
                         .HasColumnType("int");
 
                     b.Property<int>("Quantity")
@@ -94,7 +97,7 @@ namespace e_commerce.Data.Migrations
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("UserId")
+                    b.Property<int>("UserId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -128,7 +131,10 @@ namespace e_commerce.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductID"));
 
-                    b.Property<int?>("CategoryId")
+                    b.Property<int?>("CategoryEntitiesCategoryID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CategoryID")
                         .HasColumnType("int");
 
                     b.Property<string>("Color")
@@ -148,7 +154,7 @@ namespace e_commerce.Data.Migrations
 
                     b.HasKey("ProductID");
 
-                    b.HasIndex("CategoryId");
+                    b.HasIndex("CategoryEntitiesCategoryID");
 
                     b.ToTable("Products");
                 });
@@ -176,7 +182,7 @@ namespace e_commerce.Data.Migrations
                     b.Property<string>("Phone")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("RoleId")
+                    b.Property<int>("RoleId")
                         .HasColumnType("int");
 
                     b.Property<string>("UserName")
@@ -251,25 +257,27 @@ namespace e_commerce.Data.Migrations
                 {
                     b.HasOne("e_commerce.Model.Entities.UserEntities", "User")
                         .WithMany("OrderEntities")
-                        .HasForeignKey("UserId");
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("User");
                 });
 
             modelBuilder.Entity("e_commerce.Model.Entities.ProductEntities", b =>
                 {
-                    b.HasOne("e_commerce.Model.Entities.CategoryEntities", "Category")
+                    b.HasOne("e_commerce.Model.Entities.CategoryEntities", null)
                         .WithMany("Products")
-                        .HasForeignKey("CategoryId");
-
-                    b.Navigation("Category");
+                        .HasForeignKey("CategoryEntitiesCategoryID");
                 });
 
             modelBuilder.Entity("e_commerce.Model.Entities.UserEntities", b =>
                 {
                     b.HasOne("e_commerce.Model.Entities.UserRoleEntities", "Role")
                         .WithMany("UserEntities")
-                        .HasForeignKey("RoleId");
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Role");
                 });

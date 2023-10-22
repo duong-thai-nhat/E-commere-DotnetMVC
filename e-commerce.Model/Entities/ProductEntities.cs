@@ -18,11 +18,11 @@ namespace e_commerce.Model.Entities
 
         public string? Description { get; set;}
 
-        [ForeignKey("CategoryId")]
-        public CategoryEntities? Category { get; set; }
-
         public List<CartEntities>? CartEntities { get; set; }
 
         public List<OrderDetailEntities>? OrderDetailEntities { get; set; }
+        
+        [ForeignKey("CategoryID")]
+        public int CategoryID { get; set; }
     }
 }

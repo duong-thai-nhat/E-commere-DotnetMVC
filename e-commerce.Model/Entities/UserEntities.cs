@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace e_commerce.Model.Entities
 {
@@ -18,6 +19,9 @@ namespace e_commerce.Model.Entities
         public string? Email { get; set; }
 
         public string? Phone { get; set; }
+
+        [ForeignKey("RoleId")]
+        public int RoleId {get; set;}
 
         public UserRoleEntities? Role { get; set; }
 

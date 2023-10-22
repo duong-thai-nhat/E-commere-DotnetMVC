@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9oNyAoXN1YWvlBz1mZ381IFxQ113p0Xl2nrFEiTI3Hf/9k34MwFFpXOwajc3w6cJbTkdgvnF2HEI9dOe5pPQiQ==",
+  "dgSpecHash": "VeqIKyTzUajqO6TYpor3qE1ox71eHccP3Vo/f2luECdJamd6Mohuh5OZw6aUuv4RePWXAWjgBB+myyREeiMzFQ==",
   "success": true,
-  "projectFilePath": "d:\\Projects\\e-commerce\\e-commerce\\e-commerce.Service\\e-commerce.Service.csproj",
+  "projectFilePath": "D:\\Projects\\e-commerce\\e-commerce\\e-commerce.Service\\e-commerce.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\duong\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\duong\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",

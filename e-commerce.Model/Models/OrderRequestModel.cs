@@ -12,5 +12,8 @@ namespace e_commerce.Model.Models
         [Required(ErrorMessage = "Please add OrderDate to the request.")]
         [DataType(DataType.Date)]
         public DateTime OrderDate { get; set; }
+
+        [Required(ErrorMessage = "UserId is required")]
+        public int? UserId { get; set; }
     }
 }

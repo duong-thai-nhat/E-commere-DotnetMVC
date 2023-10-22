@@ -1,4 +1,5 @@
 ﻿using e_commerce.Model.Models;
+using e_commerce.Service.CategoryServices;
 using e_commerce.Service.ProductServices;
 using e_commerce.Service.UserServices;
 using Microsoft.AspNetCore.Authorization;
@@ -8,17 +9,19 @@ namespace e_commerce.Controllers
 {
     public class ProductController : BaseController
     {
-        private readonly IProductServices productServices;
-        public ProductController(IProductServices productServices)
+        private readonly IProductServices _productServices;
+        private readonly ICategoryServices _categoryServices;
+        public ProductController(IProductServices productServices, ICategoryServices categoryServices)
         {
-            this.productServices = productServices;
+            _productServices = productServices;
+            _categoryServices = categoryServices;
         }
 
         [HttpGet]
         //[Authorize]
         public async Task<IActionResult> GetAll()
         {
-            var result = await productServices.GetProductAll();
+            var result = await _productServices.GetProductAll();
             if (result == null)
                 return NotFound("Không tồn tại sản phẩm nào!");
 
@@ -33,7 +36,7 @@ namespace e_commerce.Controllers
                 return BadRequest("Vui lòng truyền productId và lớn hơn 0!");
             }
 
-            var result = await productServices.GetProductById(productId);
+            var result = await _productServices.GetProductById(productId);
 
             if (result is null)
                 return NotFound("Không tồn tại sản phẩm nào!");
@@ -47,7 +50,12 @@ namespace e_commerce.Controllers
             if (!ModelState.IsValid)
                 return BadRequest("Vui lòng nhập thông tin sản phẩm!");
 
-            var result = await productServices.CreateProduct(product);
+            //validate category id
+            var categoryById = await _categoryServices.GetCategoryById(product.CategoryID);
+            if(categoryById is null )
+                return BadRequest("Role người dùng không hợp lệ.");
+
+            var result = await _productServices.CreateProduct(product);
             if (result == null)
                 return BadRequest("Tạo không thành công!");
 
@@ -60,11 +68,11 @@ namespace e_commerce.Controllers
             if (productId is null || productId <= 0)
                return BadRequest("Vui lòng truyền productId và lớn hơn 0!");
             
-            var productExist =  await productServices.GetProductById(productId);
+            var productExist =  await _productServices.GetProductById(productId);
             if (productExist == null)
                 return NotFound("Sản phầm không tồn tại!");
 
-            var isRemoved = await productServices.DeleteProduct(productId);
+            var isRemoved = await _productServices.DeleteProduct(productId);
 
             if (!isRemoved)
                 return NotFound("Xóa sản phẩm thất bại!");
@@ -77,11 +85,11 @@ namespace e_commerce.Controllers
             if (!ModelState.IsValid || productId <= 0)
                 return BadRequest("Vui lòng truyền productId và lớn hơn 0!");
 
-            var productExist = await productServices.GetProductById(productId);
+            var productExist = await _productServices.GetProductById(productId);
             if (productExist == null)
                 return NotFound("Sản phầm không tồn tại!");
 
-            var result = await productServices.UpdateProduct(productRequest, productId);
+            var result = await _productServices.UpdateProduct(productRequest, productId);
 
             if (result == null)
                 return NotFound("Cập nhật sản phẩm thất bại!");

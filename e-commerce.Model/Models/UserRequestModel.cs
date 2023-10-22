@@ -25,5 +25,8 @@ namespace e_commerce.Model.Models
         [Required(ErrorMessage = "Phone is required")]
         [RegularExpression(@"^\(?([0-9]{2})[-. ]?([0-9]{4})[-. ]?([0-9]{3})[-. ]?([0-9]{3})$", ErrorMessage = "Not a valid Phone number")]
         public string? Phone { get; set; }
+
+        [Required(ErrorMessage = "RoleId is required")]
+        public int? RoleId { get; set; }
     }
 }

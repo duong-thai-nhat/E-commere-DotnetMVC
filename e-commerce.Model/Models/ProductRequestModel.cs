@@ -18,5 +18,7 @@ namespace e_commerce.Model.Models
         [Required(ErrorMessage = "Price is required")]
         public int Price { get; set; }
         public string? Description { get; set; }
+        [Required(ErrorMessage = "CategoryID is required")]
+        public int? CategoryID { get; set; }
     }
 }
