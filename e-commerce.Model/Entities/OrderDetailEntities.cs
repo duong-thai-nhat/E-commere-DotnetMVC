@@ -10,7 +10,7 @@ namespace e_commerce.Model.Entities
     public class OrderDetailEntities
     {
         [Key]
-        public int OderId { get; set; }
+        public int OrderId { get; set; }
 
         public int ProductId { get; set; }
 

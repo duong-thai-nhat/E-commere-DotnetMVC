@@ -25,7 +25,7 @@ namespace e_commerce.Data
                     .HasConstraintName("FK_Cart_User_PM");
             });
 
-            modelBuilder.Entity<OrderDetailEntities>().HasKey(pc => new { pc.ProductId, pc.OderId });
+            modelBuilder.Entity<OrderDetailEntities>().HasKey(pc => new { pc.ProductId, pc.OrderId });
             modelBuilder.Entity<OrderDetailEntities>(entity =>
             {
                 entity.HasOne(d => d.Product)
@@ -35,7 +35,7 @@ namespace e_commerce.Data
 
                 entity.HasOne(d => d.Order)
                     .WithMany(p => p.OrderDetailEntities)
-                    .HasForeignKey(d => d.OderId)
+                    .HasForeignKey(d => d.OrderId)
                     .HasConstraintName("FK_OrderDetail_Order_PM");
             });
 

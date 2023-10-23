@@ -30,9 +30,6 @@ namespace e_commerce.Data.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.Property<int>("CategoryID")
-                        .HasColumnType("int");
-
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
@@ -64,7 +61,7 @@ namespace e_commerce.Data.Migrations
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
-                    b.Property<int>("OderId")
+                    b.Property<int>("OrderId")
                         .HasColumnType("int");
 
                     b.Property<string>("Note")
@@ -76,9 +73,9 @@ namespace e_commerce.Data.Migrations
                     b.Property<decimal>("TotalPrice")
                         .HasColumnType("decimal(10, 2)");
 
-                    b.HasKey("ProductId", "OderId");
+                    b.HasKey("ProductId", "OrderId");
 
-                    b.HasIndex("OderId");
+                    b.HasIndex("OrderId");
 
                     b.ToTable("OrderDetails");
                 });
@@ -233,7 +230,7 @@ namespace e_commerce.Data.Migrations
                 {
                     b.HasOne("e_commerce.Model.Entities.OrderEntities", "Order")
                         .WithMany("OrderDetailEntities")
-                        .HasForeignKey("OderId")
+                        .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("FK_OrderDetail_Order_PM");

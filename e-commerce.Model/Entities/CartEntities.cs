@@ -16,9 +16,6 @@ namespace e_commerce.Model.Entities
 
         public int Quantity { get; set; }
 
-        [ForeignKey("CategoryID")]
-        public int CategoryID { get; set; }
-
         public UserEntities? User { get; set; }
 
         public ProductEntities? Product { get; set; }

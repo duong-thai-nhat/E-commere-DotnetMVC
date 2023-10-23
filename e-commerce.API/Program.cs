@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Identity;
 using e_commerce.Service.RoleServices;
 using e_commerce.Service.CartServices;
 using e_commerce.Service.OrderServices;
+using e_commerce.Service.OrderDetailServices;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddAutoMapper(typeof(Program));
@@ -76,6 +77,7 @@ builder.Services.AddScoped<IParentCategoryServices, ParentCategoryServices>();
 builder.Services.AddScoped<IRoleServices, UserRoleServices>();
 builder.Services.AddScoped<ICartServices, CartServices>();
 builder.Services.AddScoped<IOrderServices, OrderServices>();
+builder.Services.AddScoped<IOrderDetailServices, OrderDetailServices>();
 builder.Services.Configure<AppSetting>(builder.Configuration.GetSection("AppSettings"));
 
 var app = builder.Build();
