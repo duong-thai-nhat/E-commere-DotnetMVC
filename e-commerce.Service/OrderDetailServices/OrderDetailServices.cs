@@ -44,20 +44,20 @@ namespace e_commerce.Service.OrderDetailServices
         public async Task<OrderDetailResponseModel> GetById(int? orderId, int? productId)
         {
             var orderDetail = await (from od in _context.OrderDetails
-                                     join o in _context.Orders
-                                     on od.OrderId equals o.Id
-                                      join p in _context.Products
-                                      on od.ProductId equals p.ProductID
-                                      where od.OrderId == orderId && od.ProductId == productId
-                                      select new OrderDetailResponseModel
-                                      {
-                                          OrderId = od.OrderId,
-                                          ProductId = od.ProductId,
-                                          Product = p.ProductName,
-                                          Quantity = od.Quantity,
-                                          TotalPrice = od.TotalPrice,
-                                          Note = od.Note
-                                      }).SingleOrDefaultAsync();
+                                    join o in _context.Orders
+                                    on od.OrderId equals o.Id
+                                    join p in _context.Products
+                                    on od.ProductId equals p.ProductID
+                                    where od.OrderId == orderId && od.ProductId == productId
+                                    select new OrderDetailResponseModel
+                                    {
+                                        OrderId = od.OrderId,
+                                        ProductId = od.ProductId,
+                                        Product = p.ProductName,
+                                        Quantity = od.Quantity,
+                                        TotalPrice = od.TotalPrice,
+                                        Note = od.Note
+                                    }).SingleOrDefaultAsync();
 
             return orderDetail ?? new OrderDetailResponseModel();
         }
@@ -76,7 +76,13 @@ namespace e_commerce.Service.OrderDetailServices
                 existsOrderDetail.ProductId = orderDetailRequest.ProductId;
                 existsOrderDetail.Quantity = orderDetailRequest.Quantity;
                 existsOrderDetail.Note = orderDetailRequest.Note;
-                existsOrderDetail.TotalPrice = orderDetailRequest.Quantity * 20000;
+
+                var priceProduct = await (from od in _context.OrderDetails
+                                    join p in _context.Products
+                                    on od.ProductId equals p.ProductID
+                                    select p.Price).FirstOrDefaultAsync();
+
+                existsOrderDetail.TotalPrice = orderDetailRequest.Quantity * priceProduct;
 
                 var orderDetailIdUpdated = await _context.SaveChangesAsync();
 
@@ -86,7 +92,19 @@ namespace e_commerce.Service.OrderDetailServices
             //Create
             else
             {
-                var orderDetailEntities = _mapper.Map<OrderDetailEntities>(orderDetailRequest);
+                var priceProduct = await (from od in _context.OrderDetails
+                                          join p in _context.Products
+                                          on od.ProductId equals p.ProductID
+                                          select p.Price).FirstOrDefaultAsync();
+                var orderDetailEntities = new OrderDetailEntities
+                {
+                    OrderId = orderDetailRequest.OrderId,
+                    ProductId = orderDetailRequest.ProductId,
+                    Quantity = orderDetailRequest.Quantity,
+                    Note = orderDetailRequest.Note,
+                    TotalPrice = orderDetailRequest.Quantity * priceProduct
+                };
+
                 _context.OrderDetails.Add(orderDetailEntities);
                 await _context.SaveChangesAsync();
 

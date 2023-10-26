@@ -1001,8 +1001,7 @@
         "required": [
           "orderId",
           "productId",
-          "quantity",
-          "totalPrice"
+          "quantity"
         ],
         "type": "object",
         "properties": {
@@ -1019,10 +1018,6 @@
             "minimum": 1,
             "type": "integer",
             "format": "int32"
-          },
-          "totalPrice": {
-            "type": "number",
-            "format": "double"
           },
           "note": {
             "type": "string",
